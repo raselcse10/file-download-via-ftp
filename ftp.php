@@ -4,16 +4,16 @@
     /*
    
     $directoryPath 	= "Directory path";
-    $localFile 		= "GAKKCSV.csv";
-    $serverFile 	= "GAKKCSV.csv";
+    $localFile 		= "mycsv.csv";
+    $serverFile 	= "mycsv.csv";
 
     */
 
     # Connection Settings
     
-    $ftpServer 		= "27.131.15.19"; 	# FTP server address
-    $ftpUsername 	= "gpcsv"; 			# FTP Username
-    $ftpPassword 	= "123@gk"; 		# FTP Password
+    $ftpServer 		= "17.121.25.19"; 	# FTP server address
+    $ftpUsername 	= "myuser"; 		# FTP Username
+    $ftpPassword 	= "12345"; 		# FTP Password
 
     # FTP Basic Connection
     $connectionId = ftp_connect($ftpServer);
@@ -61,6 +61,6 @@
     ftp_close($connectionId);
 
     echo '<pre>';
-	print_r($data);
-	die();
+    print_r($data);
+    die();
 ?>
